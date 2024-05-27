@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>CGI - Nous contacter</title>
+    <link rel="icon" href="./img/ico_tab-cgi.ico">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./formulaire.css">
+  </head>
+
+    <body>
+        <nav>
+            <a href="./index.html"><img src="./img/CGI_logo.png" alt="logo"></a>
+            <ul>
+                <li class="decouvrir">
+                    <a href="#">Nous decouvrir</a>
+                    <ul class="menu_deroulant">
+                        <li><a href="./Solutions.html">Solutions</a></li>
+                        <li><a href="./carrieres.html">Carrieres</a></li>
+                        <li><a href="./analyse.html">Analyse du site</a></li>
+                    </ul>
+                    <li><a href="#">Contactez nous</a></li>
+                    <li><a href="https://www.cgi.com/fr">Le site officiel</a></li>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+          <section>
+            <h1>contactez nous</h1>
+            <p>Pour rentrer en contact avec nous veuillez remplir ce formulaire. <br> ATTENTION : les champs orange sont requis</p>
+          </section> 
+
+          <form>
+
+            <section>
+
+              <div class="info_text">
+                  <label for="nom"> Nom :</label>
+                  <input id="nom" type="text" name="nom" placeholder="votre nom" required>
+              </div>
+
+              <div class="info_text">
+                <label for="Prenom"> Prénom :</label>
+                <input id="Prenom" type="text" name="Prenom" placeholder="votre Prenom" required>
+              </div>
+
+              <fieldset>
+                <legend>Age :</legend>
+                  <label for="Age1">
+                    <input id="Age1" type="radio" name="Age" value="13-14ans" >
+                    13-14 ans
+                  </label>
+                  <label for="Age2">
+                    <input id="Age2" type="radio" name="Age" value="14-15ans" >
+                    14-15 ans
+                  </label>
+                  <label for="Age3">
+                    <input id="Age3" type="radio" name="Age" value="15-16ans" checked>
+                    15-16 ans
+                  </label>
+              </fieldset>
+
+              <div class="info_pays">
+                <label for="nationalité">Pays :</label>
+                <select id="Pays" name="Pays">
+                  <optgroup label="Europe">
+                    <option value="France" selected>Français</option>
+                    <option value="Anglais">Anglais</option>
+                    <option value="Espagnol" >Espagnol</option>
+                    <option value="Italien">Italien</option>
+                    <option value="Allemand">Allemand</option>
+                  </optgroup>
+                  <optgroup label="Hors Europe">
+                    <option value="Asie">Asiatique</option>
+                    <option value="Afrique">Africain</option>
+                    <option value="Amerique-du-Sud">Amerique-du-Sud</option>
+                    <option value="Amerique-du-Nord">Amerique-du-Nord</option>
+                    <option value="Oceanie">Oceanie</option>
+                  </optgroup>
+                </select>
+              </div>
+
+            </section>
+
+            <section>
+
+              <div class="info_text">
+                <label for="email">E-mail :</label>
+                <input id="email" type="email" name="email" placeholder="votre adresse mail" required>
+              </div>
+              <div class="info_text">
+                <label for="Collège"> Collège :</label>
+                <input id="Collège" type="text" name="Collège" placeholder="votre Collège" required>
+              </div>
+              <div class="info_text">
+                <label for="telephone"> Numéro de telephone :</label>
+                <input id="telephone" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" name="telephone" placeholder="exemple : 06 06 06 06 06" required>
+              </div>
+              <div class="info_message">
+                <label for="message">Message que vous voulez nous passer :</label>
+                <textarea name="message" id="message" placeholder="votre message">
+                </textarea>
+              </div>
+
+            </section>
+          <p>
+            <input type="submit" value="Envoyez">
+          </p>
+          </form>
+
+          <section class="twitter">
+            <h1>Découvrez nos dernières actualitées Twitter :</h1>
+            <a class="twitter-timeline" href="https://twitter.com/CGI_FR?ref_src=twsrc%5Etfw">Tweets by CGI_FR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          </section>
+          
+        </main>
+        
+        <footer>
+          <p>Site par : Mael Garnier, Jules Albuquerque Parana, Maxime Conjard inc.
+            <br> Images par shutterStock, site officiel de CGI
+          </p>
+            <section>
+              <a href="https://www.youtube.com/@CGIFrance_TV" class="youtube">
+                <button>
+                <img src="./img/icone_youtube.png" alt="YouTube">
+                <p>YouTube</p>
+            </button>
+            </a>
+            <a href="https://twitter.com/cgi_fr" class="twitter">
+                <button>
+                <img src="./img/icone_twitter.png" alt="YouTube">
+                <p>Twitter</p>
+            </button>
+            </a>
+            <a href="https://fr-fr.facebook.com/CGIFrance/" class="facebook">
+                <button>
+                <img src="./img/icone_facebook.png" alt="YouTube">
+                <p>FaceBook</p>
+            </button>
+            </a>
+            <a href="https://fr.linkedin.com/company/cgi" class="linkedin">
+                <button>
+                <img src="./img/icone_likedin.png" alt="YouTube">
+                <p>Linkedin</p>
+            </button>
+            </a>
+            <a href="https://cgi.com/fr" class="savoir_plus">
+                <button>
+                <p>En savoir plus</p>
+                </button>
+            </a>
+               
+            </section>
+        </footer>
+
+    </body>
+
+</html>

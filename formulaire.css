@@ -1,0 +1,153 @@
+main>section {
+    margin-top: 75px;
+    border: 3px solid black;
+    padding: 20px 50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px black;
+}
+main>section h1 {
+    font-size: 50px;
+    font-family: 'SourceSansProBold';
+    font-weight: bold;
+    margin: 0;
+}
+main>section p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form {
+    position: relative;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 0px black;
+    margin-top: 100px;
+    padding: 50px 50px 200px 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+form>section {
+    display: flex;
+    flex-direction: column;
+}
+.info_text {
+    margin-top: 30px;
+}
+fieldset {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    
+}
+.info_pays {
+    margin-top: 30px;
+}
+.info_message {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form>section>div {
+    font-family: 'SourceSansProBold';
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+form section div>input {
+    margin-left: 20px;
+    flex-grow: 1;
+    max-width: 270px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    transition: all 0.3s ease;
+}
+
+.info_message textarea {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 300px;
+    min-height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+fieldset legend {
+    font-family: 'SourceSansProBold';
+}
+fieldset input {
+    appearance: none;
+    border: 2px solid black;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+}
+div>select {
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+form>p {
+    position: absolute;
+    bottom: 30px;
+}
+form>p input {
+    font-family: 'SourceSansProBold';
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+form section div>input:focus {
+    outline: none;
+    transform: scale(1.1);
+    box-shadow: 10px 10px black;
+}
+.info_message textarea:focus {
+    transform: scale(1.1);
+    box-shadow: 10px 10px black;
+    outline: none;
+}
+fieldset input:checked {
+    border: 4px solid black;
+}
+div>select:focus {
+    transform: scale(1.1);
+    box-shadow: 10px 10px black;
+}
+
+input:invalid {
+    background-color: rgb(255, 194, 144);
+}
+
+
+form>p:hover input {
+    transform: scale(1.1);
+    box-shadow: 5px 5px rgb(228, 25, 55), 0.6em 0.6em black;
+}
+form>p:active input {
+    transform: translate(10px, 10px);
+    box-shadow: none;
+}
+.twitter:last-child {
+    margin-top: 100px;
+}
+.twitter:last-child h1{
+    margin-bottom: 50px;
+}
